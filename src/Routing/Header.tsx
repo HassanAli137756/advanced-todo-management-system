@@ -44,7 +44,7 @@ function Header()
 
   return (
     <div>
-      <div className="flex justify-between text-white p-7 bg-gray-950 pl-2 pr-2  ">
+      <div className="flex justify-between text-white p-6 bg-gray-950 pl-2 pr-2  ">
         {
           links.map(link =>
           {
@@ -52,7 +52,7 @@ function Header()
             <div key={link.name}>
               <NavLink
               to={link.path}
-              className={({isActive}) => `font-bold text-[0.6cm] gap-2 ${isActive ? 'text-green-400' : ''}  `}
+              className={({isActive}) => `font-bold text-xl gap-2 ${isActive ? 'text-green-400' : ''}  `}
               >
                 {link.name}
               </NavLink>

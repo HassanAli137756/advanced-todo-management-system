@@ -33,7 +33,7 @@ function ContactMe() {
                 </div>
                 <div>
                     <div className="font-semibold text-xl ">
-                        My Current Location is <span className="font-bold italic text-green-600 text-2xl">Pakistan's City Okara Sabri Colony</span>Where You Can Connect With Me
+                        My Current Location is &nbsp; <span className="font-bold italic text-green-600 text-2xl">Pakistan's City Okara Sabri Colony</span>&nbsp; Where You Can Connect With Me
                     </div>
                     <br />
                     <div className="font-bold underline text-lg italic text-green-600">

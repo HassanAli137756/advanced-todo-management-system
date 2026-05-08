@@ -1,0 +1,64 @@
+import { NavLink } from "react-router"
+
+interface Link
+{
+  name: string
+  path: string
+}
+
+
+function Header()
+{
+  const links:Link[] = [
+  {
+    name: 'All-Todos',
+    path: '/'
+  },
+  
+  {
+    name: 'Add-Todo',
+    path: '/addtodo'
+  },
+
+  {
+    name: 'Todos-Summery',
+    path: '/summery'
+  },
+
+  {
+    name: 'Todo-Searching',
+    path: '/searchengine'
+  },
+
+  {
+    name: 'Logout',
+    path: '/logout'
+  }
+
+  ]
+
+  return (
+    <div>
+      <div className="flex justify-between text-white p-7 bg-gray-950 pl-2 pr-2  ">
+        {
+          links.map(link =>
+          {
+            return(
+            <div key={link.name}>
+              <NavLink
+              to={link.path}
+              className={({isActive}) => `font-bold text-[0.6cm] gap-2 ${isActive ? 'text-green-400' : ''}  `}
+              >
+                {link.name}
+              </NavLink>
+            </div>
+            )
+          }
+          )
+        }
+      </div>
+    </div>
+  )
+}
+
+export default Header

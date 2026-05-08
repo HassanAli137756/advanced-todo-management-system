@@ -12,6 +12,7 @@ import Summery from './components/TodosComponents/Summery'
 import { SearchEngine } from './components/TodosComponents/SearchEngine'
 import Login from './AuthService/Login'
 import Logout from './AuthService/Logout'
+import ContactMe from './components/TodosComponents/ContactMe'
 
 const router = createBrowserRouter(
 createRoutesFromElements(
@@ -22,6 +23,7 @@ createRoutesFromElements(
     <Route path='/searchengine' element={<SearchEngine />} />
     <Route path='/login' element={<Login />} />
     <Route path='/logout' element={<Logout />} />
+    <Route path='/contact' element={<ContactMe />} />
 </Route>
 )
 )

@@ -31,6 +31,11 @@ function Header()
   },
 
   {
+    name: 'Contact-Me',
+    path: '/contact'
+  },
+
+  {
     name: 'Logout',
     path: '/logout'
   }

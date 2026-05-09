@@ -56,8 +56,7 @@ function AddTodo()
         setTodo(prev => ({...prev, rating: value as rating}))
     }
     
-    console.log(todo);
-    
+ 
 
 
   return(
@@ -89,7 +88,7 @@ function AddTodo()
                 <div className="w-1/2">
                 <div className="font-bold text-2xl text-sky-500 flex justify-start">
                     <div>
-                        Select-Catagory
+                        Select-Category
                     </div>
                 </div>
 

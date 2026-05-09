@@ -161,7 +161,7 @@ export function TodoCreater({todosList}:TodoProps)
                 <div className="text-yellow-500">
                   <div className="flex justify-between">
                     <div className="font-bold  ">
-                      Catagory: {todo.catagory}
+                      Category: {todo.catagory}
                     </div>
 
 

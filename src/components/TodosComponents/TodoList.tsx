@@ -7,13 +7,13 @@ import Button from "../Button"
 import { useNavigate } from "react-router"
 import type { availableCatagories } from "../TodosComponents/SearchEngine"
 
-type possibleCatagories = catagory | 'All-Catagories'
+type possibleCatagories = catagory | 'All-Categories'
 
 
 function TodoList()
 {
     const [catagory, setCatagory] = useState<possibleCatagories>('All-Catagories')    
-    const catagories = ['Fun', 'Work-Out', 'Study', 'All-Catagories']
+    const catagories = ['Fun', 'Work-Out', 'Study', 'All-Categories']
     const allTodos:TodoStructure[] = useSelector((state: any) => state.todoReducer.todos)
     
     const targetedTodos = allTodos.length > 0 ?
@@ -48,7 +48,7 @@ function TodoList()
         <div className="flex justify-start">
             <div>
             <div className="font-bold text-2xl italic ">
-                Select-Catagory
+                Select-Category 
             </div>
             <br />
             <div className="flex justify-evenly gap-5">

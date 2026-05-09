@@ -23,6 +23,23 @@ function ContactMe() {
             </div>
 
         </div>
+        <br /><br /><br />
+        <div className="pl-3">
+            <div className="flex justify-start">
+                <div  className="text-xl">
+                <div className="text-2xl italic font-bold underline text-purple-600">
+                    E-mail
+                </div><br />
+                <div>
+                    <div className="font-bold italic text-green-500" >
+                        <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPFdTGhsFDfbjGcDNpnnrDZlTclbmfcFQXTlMXjsfFhPtSqGBwtBkfMXjbzfsgpJdtXCgSM">Click To Mail me</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
 <br /><br /><br />
         <div className=" pl-3 ">
             <div className="flex justify-start">
@@ -37,7 +54,7 @@ function ContactMe() {
                     </div>
                     <br />
                     <div className="font-bold underline text-lg italic text-green-600">
-                        <a href="https://www.google.com/maps/place/Street+Number+5,+Okara,+Pakistan/@30.818181,73.4478916,18.82z/data=!4m6!3m5!1s0x3922a730d1a8785d:0xf5a8e9825fb3d6fd!8m2!3d30.8180059!4d73.4484307!16s%2Fg%2F11hbg8f4lj?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D">Click to go on maps</a>
+                        <a target="_blank" href="https://www.google.com/maps/place/Street+Number+5,+Okara,+Pakistan/@30.818181,73.4478916,18.82z/data=!4m6!3m5!1s0x3922a730d1a8785d:0xf5a8e9825fb3d6fd!8m2!3d30.8180059!4d73.4484307!16s%2Fg%2F11hbg8f4lj?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D">Click to go on maps</a>
                     </div>
                 </div>
                 </div>

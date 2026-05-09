@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux"
 import { addTodo, type catagory, type rating } from "../../Redux/TodoSlice"
 import RadioInput from "../RadioInput"
 import Button from "../Button"
-
 interface TodoStructure
 {
     text: string

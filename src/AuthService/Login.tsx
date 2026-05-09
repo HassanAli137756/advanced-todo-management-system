@@ -42,11 +42,11 @@ function Login()
             <br />
 
             <Input
-            label="Password"
+            label="Email"
             name="email"
             type="email"
             register={register}
-            placeholder="Enter Password..."
+            placeholder="Enter Email..."
             />
             <br />
 

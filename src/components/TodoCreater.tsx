@@ -119,7 +119,7 @@ export function TodoCreater({todosList}:TodoProps)
               <div className="flex justify-center">
                 <div className="">
 
-              <div className={`rounded-2xl  transition-all duration-500 p-2 ${todo.isCompleted ? 'bg-gray-500 text-black/50 ' : 'bg-pink-500'} `}>
+              <div className={`rounded-2xl  transition-all duration-500 p-2 ${todo.isCompleted ? 'bg-gray-500 text-black/50 ' : 'bg-white/70'} `}>
                 <div className='flex justify-evenly'>
                   <div className="flex justify-between w-2/3">
                   <input type="checkbox"

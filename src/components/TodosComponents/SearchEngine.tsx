@@ -5,7 +5,7 @@ import RadioInput from "../RadioInput"
 import TodoListCreater from "../TodoListCreater"
 import {type TodoStructure, type catagory, type rating} from '../../Redux/TodoSlice'
 
-export type availableCatagories = catagory | 'All-Catagories' 
+export type availableCatagories = catagory | 'All-Categories' 
 export type availableRatings = rating | 'All-Rates'
 
 
@@ -13,7 +13,7 @@ export type availableRatings = rating | 'All-Rates'
 
 export function SearchEngine()
 {
-    const [catagory, setCatagory] = useState<availableCatagories>('All-Catagories')    
+    const [catagory, setCatagory] = useState<availableCatagories>('All-Categories')    
     const [todoName, setTodoName] = useState<string>('')
     const catagories = ['Fun', 'Work-Out', 'Study', 'All-Catagories']
     const ratings = ['Low', 'Medium', 'High', 'All-Rates']
@@ -22,7 +22,7 @@ export function SearchEngine()
      
     const targetedTodos:TodoStructure[] = allTodos.filter(todo =>
     {
-        const matcheCatagory = catagory == 'All-Catagories' || todo.catagory == catagory
+        const matcheCatagory = catagory == 'All-Categories' || todo.catagory == catagory
 
         const matcheSearch = todoName.trim().length > 0 ?  todo.text.toLocaleLowerCase().includes(todoName.toLocaleLowerCase()) : true
 

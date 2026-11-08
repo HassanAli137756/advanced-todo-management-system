@@ -12,12 +12,12 @@ type possibleCatagories = catagory | 'All-Categories'
 
 function TodoList()
 {
-    const [catagory, setCatagory] = useState<possibleCatagories>('All-Catagories')    
+    const [catagory, setCatagory] = useState<possibleCatagories>('All-Categories')    
     const catagories = ['Fun', 'Work-Out', 'Study', 'All-Categories']
     const allTodos:TodoStructure[] = useSelector((state: any) => state.todoReducer.todos)
     
     const targetedTodos = allTodos.length > 0 ?
-    allTodos.filter(todo => catagory == 'All-Catagories' || todo.catagory == catagory
+    allTodos.filter(todo => catagory == 'All-Categories' || todo.catagory == catagory
     )
     :
     null
